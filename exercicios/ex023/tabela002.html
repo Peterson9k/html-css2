@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        th {
+            color: white;
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { 
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { 
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }      
+
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <thead>
+            <caption>Populaçao das Unidades Federativas</caption>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populaçao</th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)">Sao Paulo</a></td>
+                <td class="num">44 420 459</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Minas_Gerais">Minas Gerais</a></td>
+                <td class="num">20 538 718</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)">Rio de Janeiro</a></td>
+                <td class="num">16 054 524	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Bahia">Bahia</a></td>
+                <td class="num">14 136 417	</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Paran%C3%A1"> Paraná</a></td>
+                <td class="num">11 443 208	</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul">Rio Grande do Sul</a></td>
+                <td class="num">10 880 506	</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Pernambuco"> Pernambuco</a>	</td>
+                <td class="num">9 058 155	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Cear%C3%A1">Ceará</a></td>
+                <td class="num">8 791 688	</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Par%C3%A1"> Pará</a></td>
+                <td class="num">8 116 132	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Santa_Catarina">Santa Catarina</a></td>
+                <td class="num">7 609 601	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Goi%C3%A1s">Goiás</a></td>
+                <td class="num">7 055 228	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o">Maranhão</a></td>
+                <td class="num">6 775 152	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Para%C3%ADba">Paraíba</a></td>
+                <td class="num">3 974 495</td>
+            </tr>
+            <tr>
+                <a href="">
+                    <td><a href="https://pt.wikipedia.org/wiki/Amazonas"> Amazonas</a></td>
+                </a>
+                <td class="num">3 941 175	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)">Espírito Santo</a></td>
+                <td class="num">3 833 486	</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Mato_Grosso">Mato Grosso</a></td>
+                <td class="num">3 658 813	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte">Rio Grande do Norte</a></td>
+                <td class="num">3 302 406	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Piau%C3%AD">Piauí</a></td>
+                <td class="num">3 269 200</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Alagoas">Alagoas</a></td>
+                <td class="num">3 127 511	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)">Distrito Federal</a></td>
+                <td class="num">2 817 068	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul">Mato Grosso do Sul</a></td>
+                <td class="num">2 756 700	</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Sergipe">Sergipe</a></td>
+                <td class="num">2 209 558	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia">Rondônia</a></td>
+                <td class="num">1 581 016	</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Tocantins">Tocantins</a></td> 
+                <td class="num">1 511 459	1</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Acre">Acre</a></td>
+                <td class="num">830 026</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Amap%C3%A1"> Amapá</a></td>
+                <td class="num">733 508	</td>
+            </tr>
+            <tr>
+                <td> <a href="https://pt.wikipedia.org/wiki/Roraima">Roraima</a>	</td>
+                <td class="num">636 303	</td>
+            </tr> 
+          
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="final"><strong>199.403.699</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nam, laudantium dolor laboriosam aperiam vitae distinctio corrupti expedita voluptate velit explicabo ea commodi vel, dignissimos eaque perferendis, aut eos quia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolor molestiae earum, itaque soluta sit animi consectetur omnis laboriosam sint eveniet magnam dolorum? Autem earum officiis adipisci culpa asperiores aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus quidem sit at dicta cupiditate delectus voluptates corrupti et officiis harum quo, quos voluptatibus, voluptatum officia? Voluptas recusandae at molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dignissimos! Repellat iste numquam dolorum perferendis enim odit quia ea quo quisquam illum officiis, id fuga harum aliquam, doloribus, suscipit quos.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nam, laudantium dolor laboriosam aperiam vitae distinctio corrupti expedita voluptate velit explicabo ea commodi vel, dignissimos eaque perferendis, aut eos quia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolor molestiae earum, itaque soluta sit animi consectetur omnis laboriosam sint eveniet magnam dolorum? Autem earum officiis adipisci culpa asperiores aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus quidem sit at dicta cupiditate delectus voluptates corrupti et officiis harum quo, quos voluptatibus, voluptatum officia? Voluptas recusandae at molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dignissimos! Repellat iste numquam dolorum perferendis enim odit quia ea quo quisquam illum officiis, id fuga harum aliquam, doloribus, suscipit quos.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nam, laudantium dolor laboriosam aperiam vitae distinctio corrupti expedita voluptate velit explicabo ea commodi vel, dignissimos eaque perferendis, aut eos quia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolor molestiae earum, itaque soluta sit animi consectetur omnis laboriosam sint eveniet magnam dolorum? Autem earum officiis adipisci culpa asperiores aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus quidem sit at dicta cupiditate delectus voluptates corrupti et officiis harum quo, quos voluptatibus, voluptatum officia? Voluptas recusandae at molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dignissimos! Repellat iste numquam dolorum perferendis enim odit quia ea quo quisquam illum officiis, id fuga harum aliquam, doloribus, suscipit quos.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nam, laudantium dolor laboriosam aperiam vitae distinctio corrupti expedita voluptate velit explicabo ea commodi vel, dignissimos eaque perferendis, aut eos quia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolor molestiae earum, itaque soluta sit animi consectetur omnis laboriosam sint eveniet magnam dolorum? Autem earum officiis adipisci culpa asperiores aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus quidem sit at dicta cupiditate delectus voluptates corrupti et officiis harum quo, quos voluptatibus, voluptatum officia? Voluptas recusandae at molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dignissimos! Repellat iste numquam dolorum perferendis enim odit quia ea quo quisquam illum officiis, id fuga harum aliquam, doloribus, suscipit quos.</p>
+</body>
+</html>
