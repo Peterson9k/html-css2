@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.base{
+border-radius: 30px;
+height: 500px;
+background-color:white;
+width: 95%;
+display: block;
+margin: auto;
+margin: 10px 20px 0px 20px;
+}
+
+
+.menu > nav > ul > li {
+    display: inline-block;
+    list-style-type: none;
+    font-weight: 300;
+    padding: 0% 10px 0% 0%;
+
+}
+
+
+.menu > nav > ul {
+    display: block;
+    margin: 1% 0px 0px 0px;
+    position:absolute;
+    text-align: right;
+    left: 60vw;
+}
+
+#burgue{
+    display: none;
+}
