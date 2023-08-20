@@ -1,0 +1,23 @@
+:root {
+  --amber: #f5bb00;
+  --coral: #ff784f;
+  --lightCoral: #eba48e;
+  --white: #f2f2f3;
+  --gray: #4d4a4f;
+  --black: #2a2a2a;
+  --gradient: linear-gradient(110deg, #ff784f 0%, #ce4f51 100%);
+}
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+}
+
+body {
+  max-width: 2000px;
+  margin: 0 auto;
+}

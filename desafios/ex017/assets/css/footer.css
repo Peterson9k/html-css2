@@ -1,0 +1,81 @@
+.footer__grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  place-items: flex-start center;
+  gap: 20px;
+  padding: 40px 4%;
+}
+
+.footer__div-logo {
+  max-width: 250px;
+  width: 100%;
+  place-self: flex-start;
+  color: var(--gray);
+}
+
+.footer__div-empresa,
+.footer__div-servicos,
+.footer__div-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__div-empresa h3,
+.footer__div-servicos h3,
+.footer__div-contato h3 {
+  font-size: 1.25rem;
+  color: var(--black);
+  line-height: 1.6;
+}
+
+.footer__div-empresa ul,
+.footer__div-servicos ul,
+.footer__div-contato ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+}
+
+.footer__div-empresa ul li a,
+.footer__div-servicos ul li a,
+.footer__div-contato ul li a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.footer__div-contato ul li a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer__div-contato img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer__grid-container {
+    grid-template-columns: 1fr 1fr;
+    place-items: flex-start;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__grid-container {
+    grid-template-columns: 1fr;
+    place-items: center flex-start;
+  }
+
+  .footer__div-logo {
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
