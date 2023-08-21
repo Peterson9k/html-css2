@@ -35,12 +35,11 @@
   
   .bloco1 {
     background-color: white;
-    max-width: 30vw;
+    max-width: 300px;
     height: 429px;
     border-radius: 12px;
     box-sizing: border-box;
     padding: 5px;
-    margin-right: 6vw;
   }
   
   .text-bloco-1 > h3 {
@@ -64,7 +63,7 @@
     padding-top: 10px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+
   
     width: 24vw;
     height: 100px;
@@ -95,8 +94,6 @@
   .bloco2 {
     background-color: white;
     max-width: 30vw;
-    margin-right: 6vw;
-    flex-wrap: wrap;
     height: 429px;
     border-radius: 12px;
   }
