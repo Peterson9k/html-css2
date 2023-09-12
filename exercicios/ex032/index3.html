@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<head>
+    <title>My Sales Website</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product {
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.1);
+        }
+        .product-image {
+            width: 100%;
+        }
+        .product-name {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .product-price {
+            color: green;
+            font-size: 1.4em;
+            margin-top: 5px;
+        }
+        .product-description {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Sales Website</h1>
+    <p>Here are some of our products:</p>
+    <div class="product-list">
+        <!-- Add your products here -->
+    </div>
+    <script>
+        // Add your JavaScript code here
+        const products = [
+            {name: 'Product 1', price: 9.99, description: 'This is a description of product 1.'},
+            {name: 'Product 1', price: 9.99, description: 'This is a description of product 1.'},
+            {name: 'Product 2', price: 19.99, description: 'This is a description of product 2.'},
+            {name: 'Product 3', price: 29.99, description: 'This is a description of product 3.'},
+            {name: 'Product 4', price: 39.99, description: 'This is a description of product 4.'},
+            {name: 'Product 5', price: 49.99, description: 'This is a description of product 5.'},
+            {name: 'Product 6', price: 59.99, description: 'This is a description of product 6.'},
+            {name: 'Product 7', price: 69.99, description: 'This is a description of product 7.'},
+            {name: 'Product 8', price: 79.99, description: 'This is a description of product 8.'},
+            {name: 'Product 9', price: 89.99, description: 'This is a description of product 9.'},
+            {name: 'Product 10', price: 99.99, description: 'This is a description of product 10.'},
+            {name: 'Product 11', price:109.99, description:'This is a description of product11.'},
+            {name:'Product12',price :119.99,description:'This is a description of product12.'},
+            {name:'Product13',price :129.99,description:'This is a description of product13.'},
+            {name:'Product14',price :139.99,description:'This is a description of product14.'},
+            {name:'Product15',price :149.99,description:'This is a description of product15.'},
+            {name:'Product16',price :159.99,description:'This is a description of product16.'},
+            {name:'Product17',price :169.99,description:'This is a description of product17.'},
+            {name:'Product18',price :179.99,description:'This is a description of product18.'},
+            {name:'Product19',price :189.99,description:'This is a description of product19.'},
+            {name:'Product20',price :199.99,description:'This is a description of product20.'}
+            
+        ];
+        
+        const productList = document.querySelector('.product-list');
+        
+        products.forEach(product => {
+          const productElement = document.createElement('div');
+          productElement.classList.add('product');
+          productElement.innerHTML = `
+              <img class="product-image" src="https://via.placeholder.com/200x200.png?text=${encodeURIComponent(product.name)}" alt="${product.name}">
+              <div class="product-name">${product.name}</div>
+              <div class="product-price">$${product.price.toFixed(2)}</div>
+              <div class="product-description">${product.description}</div>
+          `;
+          productList.appendChild(productElement);
+        });
+
+        
+    </script>
+    sxc
+    
+</body>
+</html>

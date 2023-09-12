@@ -1,0 +1,25 @@
+
+form {
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+}
+form p {
+    padding: 10px;
+    text-align: left;
+    margin: 0px;
+}
+
+p sup {
+    margin-right: 50px;
+    
+}
+
+.inpu2, .inpu3 , .inpu1{
+    margin-left: 10px;
+}

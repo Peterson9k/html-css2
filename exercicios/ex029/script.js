@@ -1,8 +1,8 @@
+const tecladoTexte = document.querySelectorAll('.conteudo p')
+    
 
-function keyBoard(event){
-    if(event.key === 'Q'){
-       document.body.classList.add('aoCLicar')
-    }
+function ativarTeclas(evento){
+     evento = document.querySelectorAll('.aoClick')  
 }
 
-window.addEventListener('keydown', keyBoard)
+tecladoTexte.window.addEventListener('keydown' , ativarTeclas)

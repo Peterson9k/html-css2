@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #meu-botao {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Página</h1>
+    <p>Clique no botão abaixo para mudar a cor de fundo da página:</p>
+    <button id="meu-botao">Mudar Cor</button>
+
+    <script>
+        var cores = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+        var indiceCorAtual = 0;
+        document.getElementById("meu-botao").onclick = function() {
+            document.body.style.backgroundColor = cores[indiceCorAtual];
+            indiceCorAtual = (indiceCorAtual + 1) % cores.length;
+        }
+    </script>
+</body>
+</html>
