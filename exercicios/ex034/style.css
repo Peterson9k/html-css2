@@ -1,0 +1,103 @@
+header {
+    padding: 40px 4% 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 1rem;
+  }
+header img {width: 100px;}  
+.pagina-ativa {color: var(--coral);}
+.desktop-menu {display: block;}
+.mobile-menu {display: none;}
+.js-accordion{display: none;}
+
+@media (max-width: 768px) {
+  .desktop-menu {display: none;}
+  .mobile-menu {display: block; transition: .3s;}
+  .js .mobile-menu ul {display: none;}
+  .mobile-menu ul.ativo li a{color: black; }
+  .mobile-menu  ul.ativo li .pagina-ativa{color: white;}
+.js-accordion{
+  text-align: right;
+  padding: 10px;
+  right: 20px;
+  z-index: 100;
+  margin-top: -40px;
+  display: block;
+  cursor: pointer;
+  position: fixed;
+}
+.js-accordion span {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background-color: var(--coral);
+  display: block;
+  margin-bottom: 6px;
+  transition: .5s;
+}
+
+.js-accordion span:nth-child(1){
+  transform-origin: left;}.js-accordion span:nth-child(2){transform-origin: center;}.js-accordion span:nth-child(3){transform-origin: left;}.js-accordion.ativo span:nth-child(1){transform: rotate(45deg);left: 2px;}.js-accordion.ativo02 span:nth-child(2){transform: rotate(315deg);}.js-accordion.ativo02 span:nth-child(3){transform: scaleX(0);}
+  .mobile-menu ul.ativo{
+    width:250px;
+    height: 50vh;
+    z-index: 100;
+    font-size: 30px;
+    top: 30px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    animation: slideDown .5s forwards;
+    left:1px;
+    border-radius: 10px;
+    background-color: var(--coral);
+  }
+  .mobile-menu ul.ativo li{
+    margin-top: 10px;
+    margin: 10px 2px 0px 2px;
+    padding:.25rem 0;
+    text-align:center;
+    height:max-content;
+    transition:.3s;
+    letter-spacing:3px;
+    cursor:pointer;
+  }
+  .mobile-menu > ul.ativo li:hover a{
+    font-weight: 700;
+    color:white;
+    transition:.5s;
+  }
+  .mobile-menu > ul.ativo li:hover{
+    background-color:#e65d33c6;
+    border-radius: 4px;
+    transition:.6s;
+
+  }
+  @keyframes slideDown {
+    from{opacity: 0;transform: translate3d(-30px , 0 , 0);
+      transition: .3s;}to{opacity: 1;transform: translate3d(-30, 0 , 0);}}}
+
+
+/* .js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px , 0 , 0);
+  transition: .3s;
+}
+
+.js .js-scroll.ativo{
+  opacity: 1;
+  transform: translate3d(0, 0 , 0);
+  
+} */

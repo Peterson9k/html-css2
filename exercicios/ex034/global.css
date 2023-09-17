@@ -1,0 +1,32 @@
+:root {
+    --amber: #f5bb00;
+    --coral: #ff784f;
+    --lightCoral: #eba48e;
+    --white: #f2f2f3;
+    --gray: #4d4a4f;
+    --black: #2a2a2a;
+    --gradient: linear-gradient(110deg, #ff784f 0%, #ce4f51 100%);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  body {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  .js .js-scroll {
+    opacity: 0;
+    transform: translate3d(-30px , 0 , 0);
+    transition: .3s;
+  }
+  .js .js-scroll.ativo{
+    opacity: 1;
+    transform: translate3d(0, 0 , 0);
+    
+  }
+  .geral{
+    text-decoration: none;
+  }
