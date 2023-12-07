@@ -1,0 +1,125 @@
+let cartelaSelecionada;
+let numerosSorteados = [];
+let cartelaVencedoraIndex;
+let numerosDefinidos = [];
+let cartelasDiv = document.getElementById("cartelas");
+
+function gerarNumerosDefinidos() {
+
+    while (numerosDefinidos.length < 5) {
+      const numero = Math.floor(Math.random() * 75) + 1;
+      if (!numerosDefinidos.includes(numero)) {
+        numerosDefinidos.push(numero);
+      }
+    }
+}
+function exibirNumerosSorteados() {
+    const numerosSorteadosElement = document.getElementById("numerosSorteados");
+      numerosSorteadosElement.textContent =
+        "Números sorteados: " + numerosSorteados.join(", ");
+      numerosSorteadosElement.style.display = "block";
+}
+
+  document
+        .getElementById("comecarBtn")
+        .addEventListener("click", function () {
+          document.getElementById("comecarBtn").style.display = "none";
+          document.getElementById("sortearBtn").style.display = "block";
+          criarCartelas();
+          gerarNumerosDefinidos();
+         cartelaVencedoraIndex = Math.floor(Math.random() * 3);
+           cartelasDiv.children[cartelaVencedoraIndex].classList.add(
+             "vencedora"
+           );
+           cartelasDiv.style.display = "block";
+
+           alert("Uma das cartelas foi escolhida como vencedora. Boa sorte!");
+
+           const cartelaVencedora = cartelasDiv.children[cartelaVencedoraIndex];
+           const numerosCartelaVencedora = cartelaVencedora
+             .querySelector("ul")
+             .querySelectorAll("li");
+           for (let i = 0; i < 5; i++) {
+             numerosCartelaVencedora[i].textContent = numerosDefinidos[i];
+           }
+        });
+
+        
+      document
+      .getElementById("sortearBtn")
+      .addEventListener("click", function () {
+        if (numerosSorteados.length < 5) {
+          const numero = numerosDefinidos[numerosSorteados.length];
+          numerosSorteados.push(numero);
+
+          exibirNumerosSorteados();
+
+          if (numerosSorteados.length === 5) {
+            const cartelas = cartelasDiv.querySelectorAll(".cartela");
+            let vencedoraIndex = -1;
+
+            cartelas.forEach((cartela, index) => {
+              const numerosCartela = Array.from(
+                cartela.querySelector("ul").querySelectorAll("li")
+              );
+              const numerosCartelaArray = numerosCartela.map((element) =>
+                parseInt(element.textContent)
+              );
+              if (
+                numerosCartelaArray.every((numero) =>
+                  numerosSorteados.includes(numero)
+                )
+              ) {
+                vencedoraIndex = index;
+              }
+            });
+          }
+        }
+      });
+
+      
+      function criarCartelas() {
+        for (let i = 1; i <= 3; i++) {
+          const cartelaDiv = document.createElement("div");
+          cartelaDiv.classList.add("cartela");
+
+          let numerosCartela;
+
+          if (i === cartelaVencedoraIndex) {
+            numerosCartela = numerosDefinidos;
+          } else {
+            numerosCartela = gerarNumerosCartela();
+          }
+
+          const numerosCartelaElement = document.createElement("ul");
+          for (const numero of numerosCartela) {
+            const numeroElement = document.createElement("li");
+            numeroElement.textContent = numero;
+            numerosCartelaElement.appendChild(numeroElement);
+          }
+
+          const cartelaRadio = document.createElement("input");
+          cartelaRadio.type = "radio";
+          cartelaRadio.name = "cartela";
+          cartelaRadio.value = i;
+
+          cartelaDiv.appendChild(cartelaRadio);
+          cartelaDiv.appendChild(numerosCartelaElement);
+          cartelasDiv.appendChild(cartelaDiv);
+        }
+      }
+
+      
+      function gerarNumerosCartela() {
+        const numeros = [];
+        while (numeros.length < 20) {
+          const numero = Math.floor(Math.random() * 75) + 1;
+          if (numeros.indexOf(numero) === -1) {
+            numeros.push(numero);
+          }
+        }
+        return numeros;
+      }
+      const teste = function te(){
+
+      }

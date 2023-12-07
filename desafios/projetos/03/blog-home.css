@@ -1,0 +1,56 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1:#C907E0;
+    --cor2:#E00788;
+    --cor3:#8207E0;
+    --cor4:#3B07E0;
+    --cor5:#0719E0;
+}
+
+
+body{
+    background-image: linear-gradient(to bottom, var(--cor1) , var(--cor3));
+    height: 100vh;
+
+}
+header {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+header nav ul{
+    margin: auto;
+    display: flex;
+    gap: 80px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header nav ul li , header nav ul li a {
+    color: rgb(243, 200, 200);
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover{
+    transition: .1s;
+    text-decoration: underline;
+}
+
+section .bloco-teste{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    background-image: url(assents/img/01.jpg);
+    background-size: cover;
+    border: 3px solid var(--cor4);
+}

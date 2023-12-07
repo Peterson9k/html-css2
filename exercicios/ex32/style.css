@@ -1,0 +1,113 @@
+    
+header{
+    height: 150px;
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+}
+header nav {
+    width: 100%;
+    background-color: rgb(47, 156, 120);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+header nav ul li {
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    transition: .3s;
+
+}
+
+header nav ul li:hover{
+    background-color: rgb(25, 88, 67);
+    transition: .3s;
+}
+header nav ul li,header nav ul a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+    
+@media screen and (max-width:1000px) {
+     .js-accordion{
+        text-align: right;
+        padding: 10px;
+        right: 20px;
+        z-index: 100;
+        margin-top: -40px;
+        display: block;
+        cursor: pointer;
+        position: fixed;
+    }
+    .js-accordion span {
+        cursor: pointer;
+        position: relative;
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        display: block;
+        margin-bottom: 6px;
+        transition: .5s;
+    }
+  
+    .js-accordion span:nth-child(1){
+    transform-origin: left;}
+    .js-accordion span:nth-child(2){
+        transform-origin: center;
+    }
+    .js-accordion span:nth-child(3){transform-origin: left;}
+    .js-accordion.ativo02 span:nth-child(1){
+        transform: rotate(45deg);left: 2px;
+    }
+    .js-accordion.ativo02 span:nth-child(2){
+        transform: rotate(315deg);
+    }
+    .js-accordion.ativo02 span:nth-child(3){
+        transform: scaleX(0);
+    }
+    
+    header nav ul{
+        display: none;
+        flex-direction: column;
+    }
+    header nav ul.ativo{
+        display: block;
+        width: 50%;
+        margin: auto;
+        animation: slideDown .5s forwards;
+        gap: 50px;
+
+    }
+    header nav ul.ativo li {
+        padding: 5px;
+        margin: 10px;
+
+    }
+
+    .header{
+        margin: 0px;
+        padding: 0px;
+        animation: slideDown .5s forwards;
+
+    }
+    header.header nav {
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        animation: slideDown .5s forwards;
+        
+    }
+
+    @keyframes slideDown {
+        from{opacity: 0;transform: translate3d(-30px , 0 , 0);
+          transition: .3s;}to{opacity: 1;transform: translate3d(-30, 0 , 0);}}
+}
+    
+   

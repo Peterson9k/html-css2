@@ -1,0 +1,286 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --cor01:#344BED;
+    --cor02:#5236F7;
+    --cor03:#321bff;
+    --corP:rgb(231, 48, 48);
+}
+header img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+header section nav ul,header section nav ul li a{
+    font-size: 0.8rem;
+    position: relative;
+    color: white;
+    display: flex;
+    font-weight: 500;
+    list-style-type: none;
+    padding: 10px;
+    justify-content: center;
+    text-decoration: none;
+}
+header section:nth-child(2) p{
+    display: flex;
+    position: absolute;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 2px;
+    margin: 15px;
+    text-align: center;
+    max-width: 30px;
+    max-height: 30px;
+    font-size: 14px;
+}
+header section:nth-child(3) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+header section:nth-child(3) p {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+header section:nth-child(3) h1{
+    text-align: center;
+    color: white;
+    letter-spacing: 10px;
+    margin: 10px;
+}
+header section:nth-child(3) button{
+    text-align: center;
+    margin: auto;
+    display: block;
+    background-color: red;
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+header section:nth-child(3) button a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.blocos{
+    position: relative;
+    top: 444px;
+    display: flex;
+}
+.blocos div{
+    margin: auto;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 500px;
+
+}
+
+.blocos div:nth-child(1){
+    background-color: var(--cor01);}.blocos div:nth-child(2){background-color: var(--cor03);}.blocos div:nth-child(3){background-color: var(--cor02);
+}
+.blocos div h1{
+    font-size: 20px;
+    margin: 10px;
+}
+.blocos div h2{
+    margin: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.blocos div p{
+    margin: auto;
+    font-size: 10px;
+    font-weight: 100;
+    width: 120px;
+}
+.blocos div a{
+    text-decoration: none;
+    font-size: 11px;
+    color: var(--corP);
+    margin: 10px;
+    display: block;
+}
+main{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 689px;
+}
+main h2{
+    top: 40px;
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    font-size: 0.6rem;
+}
+main .h1{
+    top: 40px;
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 6px;
+}
+main section .div-bloco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    margin-top: 70px;
+}
+main section .div-bloco div img{
+    width: 336px;
+    height: 300px;
+    object-fit: cover;
+}
+main section .div-bloco .item3 img{
+    width: 666px;
+}
+.div-bloco .item1 p {
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    color:var(--corP);
+    top: 50%;
+}
+.div-bloco .item1 h1{
+    text-align: center;
+    display: block;
+    position: relative;
+    color: white;
+    top: 50%;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.div-bloco .item1  button{
+    position: relative;
+    top: 53%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    background-color: red;
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+.div-bloco .item1   button a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.div-bloco .item2 p{
+        text-align: center;
+        font-size: 0.7rem;
+        font-weight: 700;
+        display: block;
+        position: relative;
+        color:var(--corP);
+        top: 50%;
+}
+.div-bloco .item2 h1{
+    text-align: center;
+    display: block;
+    position: relative;
+    color: white;
+    top: 50%;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.div-bloco .item2  button{
+    position: relative;
+    top: 53%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    background-color: red;
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+.div-bloco .item2   button a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.div-bloco .item3 p{
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    color:var(--corP);
+    top: 50%;
+}
+.div-bloco .item3 h1{
+text-align: center;
+display: block;
+position: relative;
+color: white;
+top: 50%;
+letter-spacing: 1px;
+font-weight: bolder;
+font-size: 1.3rem;
+}
+.div-bloco .item3  button{
+position: relative;
+top: 53%;
+text-align: center;
+margin: auto;
+display: block;
+background-color: red;
+border: none;
+padding: 8px;
+border-radius: 20px;
+font-size: 10px;
+}
+.div-bloco .item3   button a{
+text-decoration: none;
+color: white;
+padding: 10px;
+}
+main .bloco-texto{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+}
+main .bloco-texto div{
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+}
+main .bloco-texto div h1{
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+}
+main .bloco-texto div p{
+    color: rgb(83, 80, 80);
+    font-size: 0.9rem;
+}
+
+
+
+@media screen and (max-width:916px) {
+    .blocos{top: 500px;gap: 10px;flex-wrap: wrap;width: 300px;margin: auto;}
+    main{top: 1150px;
+    }}
+@media screen and (max-width:738px) {
+    main section .div-bloco .item3 img{width:336px;}}

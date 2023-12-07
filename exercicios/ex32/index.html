@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Teste Menu</h1>
+        <nav>
+            <div class="js-accordion"><span></span><span></span><span></span></div>
+            <ul>
+                <li><a href="#">item1</a></li>
+                <li><a href="#">item2</a></li>
+                <li><a href="#">item3</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <script>
+        const itemMenu = document.querySelector("ul")
+        const menu = document.querySelector(".js-accordion")
+        const header = document.querySelector("header")
+        
+        function ativoMenu(e){
+            const fuc = menu.classList.toggle("ativo02")
+            const item = itemMenu.classList.toggle("ativo")
+            const hed = header.classList.toggle("header")
+        }
+
+     const fuc =  menu.addEventListener('click', ativoMenu)
+       
+    </script>
+</body>
+</html>

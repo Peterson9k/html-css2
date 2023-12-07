@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+:root{
+    --cor01:#3FAB94;
+    --cor02:#286B5C;
+    --cor03:#13332C;
+    --cor04:#0B1E1A;
+}
+ body{
+    width: 100%;        
+    background-color: black;
+    color: white;
+}   
+
+header{
+    margin-top: 50px;
+    border-top: 7px solid var(--cor02);
+    width: 100%;
+    height: 300px;
+}
+header nav ul{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 5%;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: var(--cor01);
+    font-weight: 800;
+    font-size: 1rem;
+}
+header nav ul img{
+    text-align: center;
+    padding-bottom: 10px;
+    height: 30px;
+}
+
+header h1{
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800; 
+    font-size: 2.1rem;
+}
+
+main section:nth-child(1){
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main section:nth-child(1) .img1{
+    width: 500px;
+    height: 500px;
+    border: 5px solid var(--cor01);
+    background-image: url(img/img-1.jpeg);
+    background-size: cover;
+    margin: 10px;
+}
+
+main section:nth-child(1) div {
+    background-color: #1d1d1d;
+    width: 400px;
+    height: 300px;
+}
+
+main section:nth-child(1) p{
+    padding: 10px;
+    width: 210px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--cor01);
+}

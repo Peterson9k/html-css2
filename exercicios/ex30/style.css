@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(Firefly\ A\ small\ blue\ flower\ sprouting\ on\ the\ edge\ of\ a\ mountain\ of\ mars\,\ dawn\ and\ deep\ valley\ in\ the.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.div{
+    background-color: aqua;
+    border-radius: 10px;
+    position: relative;
+    margin: 5% 10px 10px 10px;
+    padding: 10px;
+}
+
+h1{
+    padding:10px;
+    margin: 5px;
+    text-align: center;
+}
+
+section{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+section div{
+    border: 1px solid black;
+    box-shadow: 1px 4px rgba(0, 0, 0, 0.055);
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+div button{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+
+    position: relative;
+    top: 90%;
+}
+
+div button:hover{
+    font-size: 16px;
+    transition: .2s;
+}
+
+.item{
+    background-color: rgba(0, 255, 255, 0.226);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.9rem;
+    font-weight: 800
+    
+}
