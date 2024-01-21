@@ -1,0 +1,17 @@
+.footer__div-empresa h3,.footer__div-servicos h3,.footer__div-contato h3 {
+    font-size: 1.25rem;
+    color: var(--black);
+    line-height: 1.6;}
+  .footer__div-empresa ul,.footer__div-servicos ul,.footer__div-contato ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style: none;}
+  .footer__div-empresa ul li a,.footer__div-servicos ul li a,.footer__div-contato ul li a {
+    text-decoration:none;color: var(--gray) ; transition: .3s; padding: 3px;}
+  .footer__div-empresa ul li a:hover,.footer__div-servicos ul li a:hover,.footer__div-contato ul li a:hover{
+    color: var(--coral);transition: .3s;}
+  .footer__div-contato ul li a {
+    display: flex;align-items: center;gap: 5px;}
+  .footer__div-contato img {
+    width: 20px;height: 20px;}

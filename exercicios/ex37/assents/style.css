@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: aquamarine;
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px;
+
+}
+
+header img{
+    width: 200px;
+    height: 200px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+}
+
+header nav ul li, header nav ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+
+    display: block;
+    max-lines: 1px;
+}
