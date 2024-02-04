@@ -1,0 +1,16 @@
+$color-white:blue;
+
+.sec{
+    ul{
+        border: 1px solid;
+        background-color: aqua;
+        margin: 10px;
+        li{
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            color: $color-white;
+            cursor: pointer;
+        }
+    }
+}
