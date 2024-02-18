@@ -1,5 +1,5 @@
 import React from 'react'
-import Login from './assets/html/login.js';
+import Login from './assets/html/login2.js';
 
 function App() {
   return (
