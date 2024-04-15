@@ -1,15 +1,19 @@
 import React from 'react'
-import Header from './07/useCallback'
-function App() {
- 
-  
-    
-return (
-      <>    
-            <Header/>
-      </>  
-) 
+import NovoCss from './11/novoCss'
+      
 
+
+
+const App = () => {
+
+ 
+
+      return (
+            <>
+               <NovoCss/>
+            </>
+      )
+      
 }
 
 export default App

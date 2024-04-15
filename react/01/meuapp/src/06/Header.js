@@ -3,6 +3,7 @@ import Login from './Login'
 import Cadastro from './Cadastro'
 import './assets/style.css'
 import Main from './Main'
+import Codigo from './assets/paginas/codigo'
 const Header = () => {
     const [paginaAtual,setPaginaAtual] = React.useState('')
     const {pathname} = window.location
@@ -34,7 +35,8 @@ const Header = () => {
             paginaAtual === '/login/main'?<Main/>:null |
             paginaAtual === '/'?'':'/cadastro' |
             paginaAtual === '/login'?<Login/>:null | 
-            paginaAtual === '/cadastro'?<Cadastro/>:null
+            paginaAtual === '/cadastro'?<Cadastro/>:null |
+            paginaAtual === '/cadastro/main/jogoC'?<Codigo/>:null
             }
     
     </>
